@@ -1,0 +1,75 @@
+
+@import url("general.css");
+
+
+/*-----------------------------------TITLES*/
+
+.title-container{
+  background-color:var(--ligth-gray);
+  min-height: 200px;
+}
+
+/*------------------------------------BRAND*/
+.btn-contact{
+  border: 2px solid white;
+  border-radius: 0px;
+  color: white;
+  margin-top:15px;
+}
+.btn-contact:hover{
+  color: black;
+  background-color:white;
+}
+/*-----------------------------------GALLERY*/
+
+.container-gallery-grid{
+  height:500px;
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:repeat(2,1fr);
+  grid-template-areas: "img-galery-1 img-galery-1 img-galery-2 img-galery-3"
+                        "img-galery-1 img-galery-1 img-galery-4 img-galery-4";
+}
+
+@media (max-width:720px) {
+  .container-gallery-grid{
+      height:850px;
+      grid-template-columns:repeat(1,1fr);
+      grid-template-rows:repeat(4,1fr);
+      grid-template-areas: "img-galery-1"
+                           "img-galery-2"
+                           "img-galery-3"
+                           "img-galery-4";
+  }
+}
+.img-gallery-1{
+  grid-area:img-galery-1;
+}
+.img-gallery-2{
+  grid-area:img-galery-2;
+}
+.img-gallery-3{
+  grid-area:img-galery-3;
+}
+.img-gallery-4{
+  grid-area:img-galery-4;
+}
+
+.img-container{
+  height:auto;
+  background: #CCC;
+  overflow: hidden;
+  position: relative;
+}
+.img-container img{
+  width: 100%;
+  height: auto; 
+}
+
+@supports(object-fit: cover){
+  .img-container img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    }
+}

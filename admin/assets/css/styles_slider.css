@@ -1,0 +1,83 @@
+.nav-top-item{
+    width:150px;
+}
+
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+    content: "CARGAR";
+  }
+  .custom-file-input:hover{
+    cursor: pointer;
+  }
+
+  .card-container{
+    width:270px;
+    height:160px;
+    background: #CCC;
+    position: relative;
+  }
+  .card-container img{
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s;
+  }
+  .card-container .btn-delete{
+      position: absolute;
+      z-index: 100;
+      padding: 0 7px;
+      opacity: .8;
+      top:0;
+      right:0;
+      font-size:20px;
+      width:29px;
+  }
+
+  .card-container .btn-edit{
+    position: absolute;
+    z-index: 100;
+    padding: 0 7px;
+    opacity: .8;
+    top:32px;
+    right:0;
+    font-size:20.5px;
+    width:30px;
+}
+
+  .card-container .btn-delete:hover+img{
+    opacity:.5;
+  }
+  .card-container .btn-delete:hover{
+    opacity:1;
+    font-size:22px;
+  }
+  .card-container .btn-edit:hover{
+    opacity:1;
+    font-size:22px;
+  }
+  .text-container-slide{
+    width:100%;
+    height:30%;
+    position:absolute;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .5);
+    bottom:0%;
+    padding:10px;
+    overflow:hidden;
+  }
+  .text-container-slide p{
+    width:100%;
+    height:100%;
+    color: white;
+    overflow:hidden;
+    word-wrap:break-word;
+    white-space:pre;
+    text-overflow: ellipsis;
+  }
+ 
+
+  @supports(object-fit: cover){
+    .card-container img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      }
+  }

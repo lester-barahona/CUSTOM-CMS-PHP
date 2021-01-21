@@ -1,0 +1,19 @@
+@import url('general.css');
+
+.navbar{
+  position: unset; 
+}
+
+.text-container{
+  min-height: 200px;
+}
+
+/*----------------------------GALLERY*/
+
+.gallery img{
+  width:300px;
+  height:200px;
+}
+.vbox-share{
+  display: none !important;
+}

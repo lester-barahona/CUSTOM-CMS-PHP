@@ -1,0 +1,74 @@
+:root{
+    --morado:#42588d;
+    --gris:#b0b6b8;
+    --azul:#00141d;
+    --azul-oscuro:#000d15;
+    --gris:#eeeeee;
+}
+/*----------------------------CONTACT---------------------------*/
+.container-contact-full{
+    background-color: var(--azul);
+}
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:350px;
+}
+.form textarea{
+    max-height:120px;
+    min-height:110px;
+}
+.form-control::-webkit-input-placeholder {
+    color:rgb(175, 170, 170);
+}
+.form-control{
+    background-color:var(--azul-oscuro);
+    border: none !important;
+}
+.form-control:focus{
+    background-color:var(--azul-oscuro);
+}
+.btn-enviar{
+    padding:5px 15px;
+    border: none;
+    background-color:var(--gris);
+}
+.btn-enviar:hover{
+    color: white;
+    background-color:#167494;
+}
+/*------------------------------CONTACTS--------------------------------*/
+
+.container-contacts-full{
+    display:flex;
+    align-items: center;
+    height:350px;
+}
+.container-contacts{
+    line-height:40px;
+}
+.container-contacts :nth-child(-n+3) i{
+    padding:8px;
+    background-color:var(--gris);
+    border-radius: 50%;
+    margin-right:25px;
+    color:var(--azul);
+}
+.container-contacts p{
+    color:white;
+}
+.item-cotact i{
+    height:30px;
+}
+.item-cotact{
+    display: flex;    
+}
+
+.links-social{
+    color: black;
+}
+
+.links-social:hover{
+    color:cornflowerblue
+}

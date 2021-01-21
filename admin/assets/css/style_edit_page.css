@@ -1,0 +1,44 @@
+.card-container{
+    width:270px;
+    height:160px;
+    background: #CCC;
+    position: relative;
+  }
+  .card-container img{
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s;
+  }
+  .card-container a{
+      position: absolute;
+      z-index: 100;
+      opacity: .8;
+      border-radius: 0 0 0 10px;
+      top:0;
+      right:0;
+      font-size:20px;
+  }
+
+  .card-container a:hover+img{
+    opacity:.5;
+  }
+  .card-container a:hover{
+    opacity:1;
+    font-size:22px;
+  }
+ 
+
+  @supports(object-fit: cover){
+    .card-container img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      }
+  }
+
+  .custom-file-input:lang(en) ~ .custom-file-label::after {
+    content: "CARGAR";
+  }
+  .custom-file-input:hover{
+    cursor: pointer;
+  }

@@ -1,0 +1,6 @@
+.dataTables_filter label{
+    text-align: left;
+}
+.dataTables_filter label input{
+    margin: 0 !important;
+}
